@@ -18,7 +18,7 @@ def main():
     sh.setFormatter(formatter)
     logger.addHandler(sh)
 
-    zookeeper_hosts = "10.22.10.47:2181"
+    zookeeper_hosts = "192.168.10.10:2181"
     lock_name = "test"
 
     lock = ZooKeeperLock(zookeeper_hosts, "myid is 1", lock_name, logger=logger)
